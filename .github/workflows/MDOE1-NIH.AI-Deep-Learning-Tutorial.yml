@@ -1,4 +1,4 @@
-name: Mirror NIH.AI-Deep-Learning-Tutorial
+name: Mirror DOE-NCI-Pilot1-NIH.AI-Deep-Learning-Tutorial
 on:
   schedule:
     # nightly (0th hour 0th minute of every day)
