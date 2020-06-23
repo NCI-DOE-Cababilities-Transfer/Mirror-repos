@@ -1,4 +1,4 @@
-name: Mirror Benchmarks
+name: Mirror DOE-NCI-Pilot1-Benchmarks
 on:
   schedule:
     # nightly (0th hour 0th minute of every day)
