@@ -15,4 +15,4 @@ jobs:
         git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/adeepsk/DOE-NCI-Pilot1-Normalization.git"
         git push --mirror github
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.LEARNING_KEY }}
