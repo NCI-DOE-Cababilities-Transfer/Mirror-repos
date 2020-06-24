@@ -15,4 +15,4 @@ jobs:
         git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/adeepsk/NIH.AI-Deep-Learning-Tutorial.git"
         git push --mirror github
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.LEARNING_KEY }}
