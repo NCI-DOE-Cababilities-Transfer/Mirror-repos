@@ -2,7 +2,7 @@ name: Mirror DOE-NCI-Pilot1-Learning
 on:
   schedule:
     # nightly (0th hour 0th minute of every day)
-    - cron:  '*/5 * * * *'
+    - cron:  '5 0 * * *'
 
 jobs:
   build:
