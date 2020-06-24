@@ -12,7 +12,7 @@ jobs:
       run: |
         git clone --mirror 'https://github.com/DOE-NCI-Pilot1/Learning.git'
         cd Learning.git/
-       
-        git push --mirror "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/adeepsk/DOE-NCI-Pilot1-Learning.git"
+       git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/adeepsk/DOE-NCI-Pilot1-Learning.git"
+        git push --mirror github
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
