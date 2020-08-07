@@ -1,0 +1,18 @@
+name: Mirror DOE-NCI-Pilot1-Benchmarks
+on:
+  schedule:
+    # nightly (0th hour 0th minute of every day)
+    - cron:  '5 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror
+      run: |
+        git clone --mirror 'https://github.com/ECP-CANDLE/Benchmarks/tree/master/Pilot1/Attn.git'
+        cd Attn.git/
+        git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/NCI-DOE-Cababilities-Transfer/DOE-NCI-Pilot1-ATTN.git"
+        git push --mirror github
+      env:
+        GITHUB_TOKEN: ${{ secrets.LEARNING_KEY }}
